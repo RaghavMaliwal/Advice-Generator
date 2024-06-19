@@ -61,7 +61,7 @@ body {
 }
 
 .divider {
-  width: 90%;
+  width: 444px;
   height: 16px;
   background: url(images/pattern-divider-desktop.svg);
 }
