@@ -1,0 +1,103 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  height: 40%;
+  width: 40%;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.content {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.advno,
+.quote {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.advno p {
+  color: hsl(150, 100%, 66%);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.quote p {
+  font-size: 28px;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+}
+
+.divider {
+  width: 90%;
+  height: 16px;
+  background: url(images/pattern-divider-desktop.svg);
+}
+
+.next {
+  width: 64px;
+  height: 64px;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  position: relative;
+  top: -3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dice {
+  height: 24px;
+  width: 24px;
+  background: url(images/icon-dice.svg);
+}
+
+.next:hover {
+  box-shadow: 0px 0px 48px hsl(150, 100%, 66%);
+}
+
+@media (width <= 425px) {
+  .container {
+    width: 95%;
+    height: 50%;
+    justify-content: center;
+  }
+
+  .divider {
+    width: 295px;
+    background: url(images/pattern-divider-mobile.svg);
+  }
+}
